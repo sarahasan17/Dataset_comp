@@ -688,10 +688,6 @@
     "patterns": ["What is the Backpropagation Algorithm in machine learning?", "Explain Backpropagation Algorithm."],
     "responses": ["The Backpropagation Algorithm is a widely used optimization algorithm for training artificial neural networks. It is a supervised learning algorithm that uses a gradient-based approach to update the model weights based on the error between the predicted output and the actual output. Backpropagation calculates the gradient of the error with respect to the model weights and uses it to adjust the weights iteratively during the training process."]
     },
-Sure, here's an extended dataset with 100 entries using some rare and specialized technical terms in computer science and programming:
-
-```json
-[
     {
         "tag": "memoization",
         "patterns": ["Explain memoization.", "What is memoization?", "Define memoization."],
