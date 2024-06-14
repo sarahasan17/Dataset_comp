@@ -1,88 +1,4 @@
 [
-    {
-        "question": "What webhook event payload triggers when a release is published?",
-        "answer": "The `release` webhook event payload triggers when a release is published.",
-        "url": "https://docs.github.com/en/actions/reference/events-that-trigger-workflows#release-event-release",
-        "tag": "release"
-    },
-    {
-        "question": "What webhook event payload triggers when a release is unpublished?",
-        "answer": "The `release` webhook event payload triggers when a release is unpublished.",
-        "url": "https://docs.github.com/en/actions/reference/events-that-trigger-workflows#release-event-release",
-        "tag": "release"
-    },
-    {
-        "question": "What webhook event payload triggers when a release is created?",
-        "answer": "The `release` webhook event payload triggers when a release is created.",
-        "url": "https://docs.github.com/en/actions/reference/events-that-trigger-workflows#release-event-release",
-        "tag": "release"
-    },
-    {
-        "question": "What webhook event payload triggers when a release is edited?",
-        "answer": "The `release` webhook event payload triggers when a release is edited.",
-        "url": "https://docs.github.com/en/actions/reference/events-that-trigger-workflows#release-event-release",
-        "tag": "release"
-    },
-    {
-        "question": "What webhook event payload triggers when a release is deleted?",
-        "answer": "The `release` webhook event payload triggers when a release is deleted.",
-        "url": "https://docs.github.com/en/actions/reference/events-that-trigger-workflows#release-event-release",
-        "tag": "release"
-    },
-    {
-        "question": "What webhook event payload triggers when a release is prereleased?",
-        "answer": "The `release` webhook event payload triggers when a release is prereleased.",
-        "url": "https://docs.github.com/en/actions/reference/events-that-trigger-workflows#release-event-release",
-        "tag": "release"
-    },
-    {
-        "question": "What webhook event payload triggers when a release is released?",
-        "answer": "The `release` webhook event payload triggers when a release is released.",
-        "url": "https://docs.github.com/en/actions/reference/events-that-trigger-workflows#release-event-release",
-        "tag": "release"
-    },
-    {
-        "question": "What webhook event payload triggers a `repository_dispatch` event with a custom activity type?",
-        "answer": "The `repository_dispatch` webhook event payload triggers with a custom activity type.",
-        "url": "https://docs.github.com/en/actions/reference/events-that-trigger-workflows#repository_dispatch-event-repository_dispatch",
-        "tag": "repository_dispatch"
-    },
-    {
-        "question": "What webhook event payload is triggered by a schedule?",
-        "answer": "The `schedule` webhook event payload is triggered by a schedule.",
-        "url": "https://docs.github.com/en/actions/reference/events-that-trigger-workflows#schedule-event-schedule",
-        "tag": "schedule"
-    },
-    {
-        "question": "What webhook event payload triggers when the status of a Git commit changes?",
-        "answer": "The `status` webhook event payload triggers when the status of a Git commit changes.",
-        "url": "https://docs.github.com/en/actions/reference/events-that-trigger-workflows#status-event-status",
-        "tag": "status"
-    },
-    {
-        "question": "What webhook event payload triggers when a repository is starred?",
-        "answer": "The `watch` webhook event payload triggers when a repository is starred.",
-        "url": "https://docs.github.com/en/actions/reference/events-that-trigger-workflows#watch-event-watch",
-        "tag": "watch"
-    },
-    {
-        "question": "What webhook event payload indicates that a workflow can be called by another workflow?",
-        "answer": "The `workflow_call` webhook event payload indicates that a workflow can be called by another workflow.",
-        "url": "https://docs.github.com/en/actions/reference/events-that-trigger-workflows#workflow_call-event-workflow_call",
-        "tag": "workflow_call"
-    },
-    {
-        "question": "What webhook event payload triggers when a workflow is manually dispatched?",
-        "answer": "The `workflow_dispatch` webhook event payload triggers when a workflow is manually dispatched.",
-        "url": "https://docs.github.com/en/actions/reference/events-that-trigger-workflows#workflow_dispatch-event-workflow_dispatch",
-        "tag": "workflow_dispatch"
-    },
-    {
-        "question": "What webhook event payload triggers when a workflow run is requested, completed, or in progress?",
-        "answer": "The `workflow_run` webhook event payload triggers when a workflow run is requested, completed, or in progress.",
-        "url": "https://docs.github.com/en/actions/reference/events-that-trigger-workflows#workflow_run-event-workflow_run",
-        "tag": "workflow_run"
-    },
   {
     "question": "GitHub Actions event for 'milestone'?",
     "answer": "milestone",
@@ -967,6 +883,90 @@
     "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows",
     "tag": "github actions"
   },
+    {
+        "question": "What webhook event payload triggers when a release is published?",
+        "answer": "The `release` webhook event payload triggers when a release is published.",
+        "url": "https://docs.github.com/en/actions/reference/events-that-trigger-workflows#release-event-release",
+        "tag": "release"
+    },
+    {
+        "question": "What webhook event payload triggers when a release is unpublished?",
+        "answer": "The `release` webhook event payload triggers when a release is unpublished.",
+        "url": "https://docs.github.com/en/actions/reference/events-that-trigger-workflows#release-event-release",
+        "tag": "release"
+    },
+    {
+        "question": "What webhook event payload triggers when a release is created?",
+        "answer": "The `release` webhook event payload triggers when a release is created.",
+        "url": "https://docs.github.com/en/actions/reference/events-that-trigger-workflows#release-event-release",
+        "tag": "release"
+    },
+    {
+        "question": "What webhook event payload triggers when a release is edited?",
+        "answer": "The `release` webhook event payload triggers when a release is edited.",
+        "url": "https://docs.github.com/en/actions/reference/events-that-trigger-workflows#release-event-release",
+        "tag": "release"
+    },
+    {
+        "question": "What webhook event payload triggers when a release is deleted?",
+        "answer": "The `release` webhook event payload triggers when a release is deleted.",
+        "url": "https://docs.github.com/en/actions/reference/events-that-trigger-workflows#release-event-release",
+        "tag": "release"
+    },
+    {
+        "question": "What webhook event payload triggers when a release is prereleased?",
+        "answer": "The `release` webhook event payload triggers when a release is prereleased.",
+        "url": "https://docs.github.com/en/actions/reference/events-that-trigger-workflows#release-event-release",
+        "tag": "release"
+    },
+    {
+        "question": "What webhook event payload triggers when a release is released?",
+        "answer": "The `release` webhook event payload triggers when a release is released.",
+        "url": "https://docs.github.com/en/actions/reference/events-that-trigger-workflows#release-event-release",
+        "tag": "release"
+    },
+    {
+        "question": "What webhook event payload triggers a `repository_dispatch` event with a custom activity type?",
+        "answer": "The `repository_dispatch` webhook event payload triggers with a custom activity type.",
+        "url": "https://docs.github.com/en/actions/reference/events-that-trigger-workflows#repository_dispatch-event-repository_dispatch",
+        "tag": "repository_dispatch"
+    },
+    {
+        "question": "What webhook event payload is triggered by a schedule?",
+        "answer": "The `schedule` webhook event payload is triggered by a schedule.",
+        "url": "https://docs.github.com/en/actions/reference/events-that-trigger-workflows#schedule-event-schedule",
+        "tag": "schedule"
+    },
+    {
+        "question": "What webhook event payload triggers when the status of a Git commit changes?",
+        "answer": "The `status` webhook event payload triggers when the status of a Git commit changes.",
+        "url": "https://docs.github.com/en/actions/reference/events-that-trigger-workflows#status-event-status",
+        "tag": "status"
+    },
+    {
+        "question": "What webhook event payload triggers when a repository is starred?",
+        "answer": "The `watch` webhook event payload triggers when a repository is starred.",
+        "url": "https://docs.github.com/en/actions/reference/events-that-trigger-workflows#watch-event-watch",
+        "tag": "watch"
+    },
+    {
+        "question": "What webhook event payload indicates that a workflow can be called by another workflow?",
+        "answer": "The `workflow_call` webhook event payload indicates that a workflow can be called by another workflow.",
+        "url": "https://docs.github.com/en/actions/reference/events-that-trigger-workflows#workflow_call-event-workflow_call",
+        "tag": "workflow_call"
+    },
+    {
+        "question": "What webhook event payload triggers when a workflow is manually dispatched?",
+        "answer": "The `workflow_dispatch` webhook event payload triggers when a workflow is manually dispatched.",
+        "url": "https://docs.github.com/en/actions/reference/events-that-trigger-workflows#workflow_dispatch-event-workflow_dispatch",
+        "tag": "workflow_dispatch"
+    },
+    {
+        "question": "What webhook event payload triggers when a workflow run is requested, completed, or in progress?",
+        "answer": "The `workflow_run` webhook event payload triggers when a workflow run is requested, completed, or in progress.",
+        "url": "https://docs.github.com/en/actions/reference/events-that-trigger-workflows#workflow_run-event-workflow_run",
+        "tag": "workflow_run"
+    },
   {
     "question": "workflow_run event in GitHub Actions?",
     "answer": "Runs your workflow when a workflow run is requested or completed.",
