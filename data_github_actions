@@ -1,0 +1,1078 @@
+[
+    {
+        "question": "What webhook event payload triggers when a release is published?",
+        "answer": "The `release` webhook event payload triggers when a release is published.",
+        "url": "https://docs.github.com/en/actions/reference/events-that-trigger-workflows#release-event-release",
+        "tag": "release"
+    },
+    {
+        "question": "What webhook event payload triggers when a release is unpublished?",
+        "answer": "The `release` webhook event payload triggers when a release is unpublished.",
+        "url": "https://docs.github.com/en/actions/reference/events-that-trigger-workflows#release-event-release",
+        "tag": "release"
+    },
+    {
+        "question": "What webhook event payload triggers when a release is created?",
+        "answer": "The `release` webhook event payload triggers when a release is created.",
+        "url": "https://docs.github.com/en/actions/reference/events-that-trigger-workflows#release-event-release",
+        "tag": "release"
+    },
+    {
+        "question": "What webhook event payload triggers when a release is edited?",
+        "answer": "The `release` webhook event payload triggers when a release is edited.",
+        "url": "https://docs.github.com/en/actions/reference/events-that-trigger-workflows#release-event-release",
+        "tag": "release"
+    },
+    {
+        "question": "What webhook event payload triggers when a release is deleted?",
+        "answer": "The `release` webhook event payload triggers when a release is deleted.",
+        "url": "https://docs.github.com/en/actions/reference/events-that-trigger-workflows#release-event-release",
+        "tag": "release"
+    },
+    {
+        "question": "What webhook event payload triggers when a release is prereleased?",
+        "answer": "The `release` webhook event payload triggers when a release is prereleased.",
+        "url": "https://docs.github.com/en/actions/reference/events-that-trigger-workflows#release-event-release",
+        "tag": "release"
+    },
+    {
+        "question": "What webhook event payload triggers when a release is released?",
+        "answer": "The `release` webhook event payload triggers when a release is released.",
+        "url": "https://docs.github.com/en/actions/reference/events-that-trigger-workflows#release-event-release",
+        "tag": "release"
+    },
+    {
+        "question": "What webhook event payload triggers a `repository_dispatch` event with a custom activity type?",
+        "answer": "The `repository_dispatch` webhook event payload triggers with a custom activity type.",
+        "url": "https://docs.github.com/en/actions/reference/events-that-trigger-workflows#repository_dispatch-event-repository_dispatch",
+        "tag": "repository_dispatch"
+    },
+    {
+        "question": "What webhook event payload is triggered by a schedule?",
+        "answer": "The `schedule` webhook event payload is triggered by a schedule.",
+        "url": "https://docs.github.com/en/actions/reference/events-that-trigger-workflows#schedule-event-schedule",
+        "tag": "schedule"
+    },
+    {
+        "question": "What webhook event payload triggers when the status of a Git commit changes?",
+        "answer": "The `status` webhook event payload triggers when the status of a Git commit changes.",
+        "url": "https://docs.github.com/en/actions/reference/events-that-trigger-workflows#status-event-status",
+        "tag": "status"
+    },
+    {
+        "question": "What webhook event payload triggers when a repository is starred?",
+        "answer": "The `watch` webhook event payload triggers when a repository is starred.",
+        "url": "https://docs.github.com/en/actions/reference/events-that-trigger-workflows#watch-event-watch",
+        "tag": "watch"
+    },
+    {
+        "question": "What webhook event payload indicates that a workflow can be called by another workflow?",
+        "answer": "The `workflow_call` webhook event payload indicates that a workflow can be called by another workflow.",
+        "url": "https://docs.github.com/en/actions/reference/events-that-trigger-workflows#workflow_call-event-workflow_call",
+        "tag": "workflow_call"
+    },
+    {
+        "question": "What webhook event payload triggers when a workflow is manually dispatched?",
+        "answer": "The `workflow_dispatch` webhook event payload triggers when a workflow is manually dispatched.",
+        "url": "https://docs.github.com/en/actions/reference/events-that-trigger-workflows#workflow_dispatch-event-workflow_dispatch",
+        "tag": "workflow_dispatch"
+    },
+    {
+        "question": "What webhook event payload triggers when a workflow run is requested, completed, or in progress?",
+        "answer": "The `workflow_run` webhook event payload triggers when a workflow run is requested, completed, or in progress.",
+        "url": "https://docs.github.com/en/actions/reference/events-that-trigger-workflows#workflow_run-event-workflow_run",
+        "tag": "workflow_run"
+    },
+  {
+    "question": "GitHub Actions event for 'milestone'?",
+    "answer": "milestone",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#milestone",
+    "tag": "github actions"
+  },
+  {
+    "question": "Activity types for 'milestone' event?",
+    "answer": "created, closed, opened, edited, deleted",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#milestone",
+    "tag": "github actions"
+  },
+  {
+    "question": "GitHub Actions event for 'page_build'?",
+    "answer": "page_build",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#page_build",
+    "tag": "github actions"
+  },
+  {
+    "question": "GitHub Actions event for 'project'?",
+    "answer": "project",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#project",
+    "tag": "github actions"
+  },
+  {
+    "question": "Activity types for 'project' event?",
+    "answer": "created, closed, reopened, edited, deleted",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#project",
+    "tag": "github actions"
+  },
+
+    {
+        "question": "Event type for triggering workflow when a pull request is assigned or opened?",
+        "answer": "pull_request_target types [assigned, opened]",
+        "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#pull_request_target",
+        "tag": "github actions"
+    },
+    {
+        "question": "Workflow trigger for push event affecting JavaScript files (.js)?",
+        "answer": "push paths '**.js'",
+        "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#running-your-workflow-only-when-a-push-affects-specific-files",
+        "tag": "github actions"
+    },
+    {
+        "question": "Event triggering workflow for pull_request_review?",
+        "answer": "pull_request_review submitted, edited, dismissed",
+        "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#pull_request_review",
+        "tag": "github actions"
+    },
+    {
+        "question": "Workflow trigger for pull_request_review with approved review?",
+        "answer": "pull_request_review submitted if github.event.review.state == 'APPROVED'",
+        "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#pull_request_review",
+        "tag": "github actions"
+    },
+    {
+        "question": "Workflow trigger for pull_request_review_comment created or deleted?",
+        "answer": "pull_request_review_comment created, deleted",
+        "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#pull_request_review_comment",
+        "tag": "github actions"
+    },
+    {
+        "question": "Event for pull_request_comment instead of pull_request_review_comment?",
+        "answer": "pull_request_comment",
+        "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#pull_request_comment",
+        "tag": "github actions"
+    },
+    {
+        "question": "Configuration to run workflow for specific tag (e.g., v1.0) pushed?",
+        "answer": "push tags 'v1.0'",
+        "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#running-your-workflow-only-when-a-push-of-specific-tags-occurs",
+        "tag": "github actions"
+    },
+    {
+        "question": "Workflow trigger for registry_package published?",
+        "answer": "registry_package published",
+        "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#registry_package",
+        "tag": "github actions"
+    },
+    {
+        "question": "Trigger for pull_request_target activity in repository?",
+        "answer": "pull_request_target based on activity types",
+        "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#pull_request_target",
+        "tag": "github actions"
+    },
+    {
+        "question": "Workflow for push event on main branch?",
+        "answer": "push branches 'main'",
+        "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#running-your-workflow-only-when-a-push-to-specific-branches-occurs",
+        "tag": "github actions"
+    },
+    {
+        "question": "Event type for pull_request_target labeled or unlabeled?",
+        "answer": "pull_request_target types [labeled, unlabeled]",
+        "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#pull_request_target",
+        "tag": "github actions"
+    },
+    {
+        "question": "Configuration for push event affecting Markdown files (.md)?",
+        "answer": "push paths '**.md'",
+        "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#running-your-workflow-only-when-a-push-affects-specific-files",
+        "tag": "github actions"
+    },
+    {
+        "question": "Trigger for registry_package updated?",
+        "answer": "registry_package updated",
+        "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#registry_package",
+        "tag": "github actions"
+    },
+    {
+        "question": "Workflow trigger for pull_request_target reopened?",
+        "answer": "pull_request_target reopened",
+        "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#pull_request_target",
+        "tag": "github actions"
+    },
+    {
+        "question": "Configuration for push event on branch releases/2023?",
+        "answer": "push branches 'releases/2023'",
+        "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#running-your-workflow-only-when-a-push-to-specific-branches-occurs",
+        "tag": "github actions"
+    },
+    {
+        "question": "Event type for issue_comment instead of pull_request_review_comment?",
+        "answer": "pull_request_comment",
+        "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#pull_request_comment",
+        "tag": "github actions"
+    },
+    {
+        "question": "Workflow trigger for pull_request_review_comment edited?",
+        "answer": "pull_request_review_comment edited",
+        "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#pull_request_review_comment",
+        "tag": "github actions"
+    },
+    {
+        "question": "Event triggering workflow for push event?",
+        "answer": "push commit or tag",
+        "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#push",
+        "tag": "github actions"
+    },
+    {
+        "question": "Workflow trigger for pull_request_target labeled?",
+        "answer": "pull_request_target labeled",
+        "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#pull_request_target",
+        "tag": "github actions"
+    },
+    {
+        "question": "Configuration for push event on specific tag v2.0?",
+        "answer": "push tags 'v2.0'",
+        "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#running-your-workflow-only-when-a-push-of-specific-tags-occurs",
+        "tag": "github actions"
+    },
+    {
+        "question": "Workflow for registry_package updated?",
+        "answer": "registry_package updated",
+        "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#registry_package",
+        "tag": "github actions"
+    },
+    {
+        "question": "Trigger for pull_request_target activity in repository?",
+        "answer": "pull_request_target based on activity types",
+        "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#pull_request_target",
+        "tag": "github actions"
+    },
+    {
+        "question": "Workflow for push event on main branch?",
+        "answer": "push branches 'main'",
+        "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#running-your-workflow-only-when-a-push-to-specific-branches-occurs",
+        "tag": "github actions"
+    },
+    {
+        "question": "Event type for pull_request_target labeled or unlabeled?",
+        "answer": "pull_request_target types [labeled, unlabeled]",
+        "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#pull_request_target",
+        "tag": "github actions"
+    },
+  {
+    "question": "GitHub Actions event for 'project_card'?",
+    "answer": "project_card",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#project_card",
+    "tag": "github actions"
+  },
+  {
+    "question": "Activity types for 'project_card' event?",
+    "answer": "created, moved, converted to an issue, edited, deleted",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#project_card",
+    "tag": "github actions"
+  },
+  {
+    "question": "GitHub Actions event for 'project_column'?",
+    "answer": "project_column",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#project_column",
+    "tag": "github actions"
+  },
+  {
+    "question": "Activity types for 'project_column' event?",
+    "answer": "created, updated, moved, deleted",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#project_column",
+    "tag": "github actions"
+  },
+  {
+    "question": "GitHub Actions event for 'public'?",
+    "answer": "public",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#public",
+    "tag": "github actions"
+  },
+  {
+    "question": "GitHub Actions event for 'pull_request'?",
+    "answer": "pull_request",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#pull_request",
+    "tag": "github actions"
+  },
+  {
+    "question": "Activity types for 'pull_request' event?",
+    "answer": "assigned, unassigned, labeled, unlabeled, opened, edited, closed, reopened, synchronize, converted_to_draft, locked, unlocked, enqueued, dequeued, milestoned, demilestoned, ready_for_review, review_requested, review_request_removed, auto_merge_enabled, auto_merge_disabled",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#pull_request",
+    "tag": "github actions"
+  },
+  {
+    "question": "GitHub Actions event for 'page_build'?",
+    "answer": "page_build",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#page_build",
+    "tag": "github actions"
+  },
+  {
+    "question": "GitHub Actions event for 'issue_comment'?",
+    "answer": "issue_comment",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#issue_comment",
+    "tag": "github actions"
+  },
+  {
+    "question": "Activity types for 'issue_comment' event?",
+    "answer": "created, edited, deleted",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#issue_comment",
+    "tag": "github actions"
+  },
+  {
+    "question": "GitHub Actions event for 'issues'?",
+    "answer": "issues",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#issues",
+    "tag": "github actions"
+  },
+  {
+    "question": "Activity types for 'issues' event?",
+    "answer": "opened, edited, deleted, transferred, pinned, unpinned, closed, reopened, assigned, unassigned, labeled, unlabeled, locked, unlocked, milestoned, demilestoned",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#issues",
+    "tag": "github actions"
+  },
+  {
+    "question": "GitHub Actions event for 'label'?",
+    "answer": "label",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#label",
+    "tag": "github actions"
+  },
+  {
+    "question": "Activity types for 'label' event?",
+    "answer": "created, edited, deleted",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#label",
+    "tag": "github actions"
+  },
+  {
+    "question": "GitHub Actions event for 'merge_group'?",
+    "answer": "merge_group",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#merge_group",
+    "tag": "github actions"
+  },
+  {
+    "question": "Activity types for 'merge_group' event?",
+    "answer": "checks_requested",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#merge_group",
+    "tag": "github actions"
+  },
+  {
+    "question": "GitHub Actions event for 'fork'?",
+    "answer": "fork",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#fork",
+    "tag": "github actions"
+  },
+  {
+    "question": "GitHub Actions event for 'gollum'?",
+    "answer": "gollum",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#gollum",
+    "tag": "github actions"
+  },
+  {
+    "question": "GitHub Actions event for 'deployment_status'?",
+    "answer": "deployment_status",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#deployment_status",
+    "tag": "github actions"
+  },
+  {
+    "question": "Activity types for 'deployment_status' event?",
+    "answer": "Not applicable",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#deployment_status",
+    "tag": "github actions"
+  },
+  {
+    "question": "GitHub Actions event for 'discussion'?",
+    "answer": "discussion",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#discussion",
+    "tag": "github actions"
+  },
+  {
+    "question": "Activity types for 'discussion' event?",
+    "answer": "created, edited, deleted, transferred, pinned, unpinned, labeled, unlabeled, locked, unlocked, category_changed, answered, unanswered",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#discussion",
+    "tag": "github actions"
+  },
+  {
+    "question": "GitHub Actions event for 'discussion_comment'?",
+    "answer": "discussion_comment",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#discussion_comment",
+    "tag": "github actions"
+  },
+  {
+    "question": "Activity types for 'discussion_comment' event?",
+    "answer": "created, edited, deleted",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#discussion_comment",
+    "tag": "github actions"
+  },
+  {
+    "question": "GitHub Actions event for 'public'?",
+    "answer": "public",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#public",
+    "tag": "github actions"
+  },
+  {
+    "question": "GitHub Actions event for 'pull_request'?",
+    "answer": "pull_request",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#pull_request",
+    "tag": "github actions"
+  },
+  {
+    "question": "Activity types for 'pull_request' event?",
+    "answer": "assigned, unassigned, labeled, unlabeled, opened, edited, closed, reopened, synchronize, converted_to_draft, locked, unlocked, enqueued, dequeued, milestoned, demilestoned, ready_for_review, review_requested, review_request_removed, auto_merge_enabled, auto_merge_disabled",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#pull_request",
+    "tag": "github actions"
+  },
+  {
+    "question": "GitHub Actions event for 'pull_request_review'?",
+    "answer": "pull_request_review",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#pull_request_review",
+    "tag": "github actions"
+  },
+  {
+    "question": "Activity types for 'pull_request_review' event?",
+    "answer": "submitted, edited, dismissed",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#pull_request_review",
+    "tag": "github actions"
+  },
+  {
+    "question": "GitHub Actions event for 'pull_request_review_comment'?",
+    "answer": "pull_request_review_comment",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#pull_request_review_comment",
+    "tag": "github actions"
+  },
+  {
+    "question": "Activity types for 'pull_request_review_comment' event?",
+    "answer": "created, edited, deleted",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#pull_request_review_comment",
+    "tag": "github actions"
+  },
+  {
+    "question": "GitHub Actions event for 'push'?",
+    "answer": "push",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#push",
+    "tag": "github actions"
+  },
+  {
+    "question": "GitHub Actions event for 'registry_package'?",
+    "answer": "registry_package",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#registry_package",
+    "tag": "github actions"
+  },
+  {
+    "question": "Activity types for 'registry_package' event?",
+    "answer": "published, updated, deleted",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#registry_package",
+    "tag": "github actions"
+  },
+  {
+    "question": "GitHub Actions event for 'release'?",
+    "answer": "release",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#release",
+    "tag": "github actions"
+  },
+  {
+    "question": "Activity types for 'release' event?",
+    "answer": "published, unpublished",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#release",
+    "tag": "github actions"
+  },
+  {
+    "question": "GitHub Actions event for 'repository'?",
+    "answer": "repository",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#repository",
+    "tag": "github actions"
+  },
+  {
+    "question": "Activity types for 'repository' event?",
+    "answer": "created, deleted, archived, unarchived, publicized, privatized",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#repository",
+    "tag": "github actions"
+  },
+  {
+    "question": "GitHub Actions event for 'repository_dispatch'?",
+    "answer": "repository_dispatch",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#repository_dispatch",
+    "tag": "github actions"
+  },
+  {
+    "question": "Activity types for 'repository_dispatch' event?",
+    "answer": "custom events",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#repository_dispatch",
+    "tag": "github actions"
+  },
+  {
+    "question": "GitHub Actions event for 'security_advisory'?",
+    "answer": "security_advisory",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#security_advisory",
+    "tag": "github actions"
+  },
+  {
+    "question": "Activity types for 'security_advisory' event?",
+    "answer": "published, updated, resolved",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#security_advisory",
+    "tag": "github actions"
+  },
+  {
+    "question": "GitHub Actions event for 'star'?",
+    "answer": "star",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#star",
+    "tag": "github actions"
+  },
+  {
+    "question": "Activity types for 'star' event?",
+    "answer": "created, deleted",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#star",
+    "tag": "github actions"
+  },
+  {
+    "question": "GitHub Actions event for 'status'?",
+    "answer": "status",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#status",
+    "tag": "github actions"
+  },
+  {
+    "question": "Activity types for 'status' event?",
+    "answer": "created, updated, deleted",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#status",
+    "tag": "github actions"
+  },
+  {
+    "question": "GitHub Actions event for 'team'?",
+    "answer": "team",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#team",
+    "tag": "github actions"
+  },
+  {
+    "question": "Activity types for 'team' event?",
+    "answer": "created, deleted, edited, added_to_repository, removed_from_repository",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#team",
+    "tag": "github actions"
+  },
+  {
+    "question": "GitHub Actions event for 'watch'?",
+    "answer": "watch",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#watch",
+    "tag": "github actions"
+  },
+  {
+    "question": "Activity types for 'watch' event?",
+    "answer": "started",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#watch",
+    "tag": "github actions"
+  },
+  {
+    "question": "deployment_status GitHub Actions event?",
+    "answer": "Runs your workflow when a third party provides a deployment status. Deployments created with a commit SHA may not have a Git ref.",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#deployment_status",
+    "tag": "github actions"
+  },
+  {
+    "question": "payload structure for deployment_status event?",
+    "answer": "The payload contains the commit to be deployed and the branch or tag to be deployed (empty if commit).",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#deployment_status",
+    "tag": "github actions"
+  },
+  {
+    "question": "workflow not triggered by deployment_status?",
+    "answer": "A workflow run will not be triggered when a deployment status's state is set to inactive.",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#deployment_status",
+    "tag": "github actions"
+  },
+  {
+    "question": "discussion GitHub Actions event?",
+    "answer": "Runs your workflow when a discussion in the workflow's repository is created or modified.",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#discussion",
+    "tag": "github actions"
+  },
+  {
+    "question": "discussion event activity types?",
+    "answer": "The 'discussion' event is triggered by activities like created, edited, deleted, transferred, pinned, unpinned, labeled, unlabeled, locked, unlocked, category_changed, answered, and unanswered.",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#discussion",
+    "tag": "github actions"
+  },
+  {
+    "question": "discussion_comment GitHub Actions event?",
+    "answer": "Runs your workflow when a comment on a discussion in the workflow's repository is created or modified.",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#discussion_comment",
+    "tag": "github actions"
+  },
+  {
+    "question": "discussion_comment event activity types?",
+    "answer": "The 'discussion_comment' event is triggered by activities like created, edited, and deleted.",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#discussion_comment",
+    "tag": "github actions"
+  },
+  {
+    "question": "fork GitHub Actions event?",
+    "answer": "Runs your workflow when someone forks a repository.",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#fork",
+    "tag": "github actions"
+  },
+  {
+    "question": "gollum GitHub Actions event?",
+    "answer": "Runs your workflow when someone creates or updates a Wiki page.",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#gollum",
+    "tag": "github actions"
+  },
+  {
+    "question": "issue_comment GitHub Actions event?",
+    "answer": "Runs your workflow when an issue or pull request comment is created, edited, or deleted.",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#issue_comment",
+    "tag": "github actions"
+  },
+  {
+    "question": "issue_comment event activity types?",
+    "answer": "The 'issue_comment' event is triggered by activities like created, edited, and deleted.",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#issue_comment",
+    "tag": "github actions"
+  },
+  {
+    "question": "differentiate issue comments and pull request comments in issue_comment event?",
+    "answer": "Use the github.event.issue.pull_request property in a conditional to take different action depending on whether the triggering object was an issue or pull request.",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#issue_comment",
+    "tag": "github actions"
+  },
+  {
+    "question": "issues GitHub Actions event?",
+    "answer": "Runs your workflow when an issue in the workflow's repository is created or modified.",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#issues",
+    "tag": "github actions"
+  },
+  {
+    "question": "issues event activity types?",
+    "answer": "The 'issues' event is triggered by activities like opened, edited, deleted, transferred, pinned, unpinned, closed, reopened, assigned, unassigned, labeled, unlabeled, locked, unlocked, milestoned, and demilestoned.",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#issues",
+    "tag": "github actions"
+  },
+  {
+    "question": "label GitHub Actions event?",
+    "answer": "Runs your workflow when a label in your workflow's repository is created or modified.",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#label",
+    "tag": "github actions"
+  },
+  {
+    "question": "label event activity types?",
+    "answer": "The 'label' event is triggered by activities like created, edited, and deleted.",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#label",
+    "tag": "github actions"
+  },
+  {
+    "question": "merge_group GitHub Actions event?",
+    "answer": "Runs your workflow when a pull request is added to a merge queue, which adds the pull request to a merge group.",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#merge_group",
+    "tag": "github actions"
+  },
+  {
+    "question": "merge_group event activity types?",
+    "answer": "The 'merge_group' event is triggered by the checks_requested activity type.",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#merge_group",
+    "tag": "github actions"
+  },
+  {
+    "question": "milestone GitHub Actions event?",
+    "answer": "Runs your workflow when a milestone is created, closed, opened, edited, or deleted.",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#milestone",
+    "tag": "github actions"
+  },
+  {
+    "question": "milestone event activity types?",
+    "answer": "The 'milestone' event is triggered by activities like created, closed, opened, edited, and deleted.",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#milestone",
+    "tag": "github actions"
+  },
+  {
+    "question": "page_build GitHub Actions event?",
+    "answer": "Runs your workflow when someone pushes to a GitHub Pages-enabled branch.",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#page_build",
+    "tag": "github actions"
+  },
+  {
+    "question": "public GitHub Actions event?",
+    "answer": "Runs your workflow when someone makes a private repository public.",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#public",
+    "tag": "github actions"
+  },
+  {
+    "question": "pull_request GitHub Actions event?",
+    "answer": "Runs your workflow when a pull request is created, synchronized, reopened, or closed.",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#pull_request",
+    "tag": "github actions"
+  },
+  {
+    "question": "pull_request event activity types?",
+    "answer": "The 'pull_request' event is triggered by activities like opened, closed, reopened, edited, assigned, unassigned, labeled, unlabeled, synchronized, ready_for_review, locked, unlocked, and review_requested.",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#pull_request",
+    "tag": "github actions"
+  },
+  {
+    "question": "pull_request_review GitHub Actions event?",
+    "answer": "Runs your workflow when a pull request review is submitted, edited, or dismissed.",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#pull_request_review",
+    "tag": "github actions"
+  },
+  {
+    "question": "pull_request_review event activity types?",
+    "answer": "The 'pull_request_review' event is triggered by activities like submitted, edited, and dismissed.",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#pull_request_review",
+    "tag": "github actions"
+  },
+  {
+    "question": "pull_request_target GitHub Actions event?",
+    "answer": "Runs your workflow in the context of the base of the pull request's repository when a pull request is opened or synchronized.",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#pull_request_target",
+    "tag": "github actions"
+  },
+  {
+    "question": "push GitHub Actions event?",
+    "answer": "Runs your workflow when someone pushes to a branch or tag.",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#push",
+    "tag": "github actions"
+  },
+  {
+    "question": "registry_package GitHub Actions event?",
+    "answer": "Runs your workflow when someone publishes or updates a package in GitHub Packages.",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#registry_package",
+    "tag": "github actions"
+  },
+  {
+    "question": "release GitHub Actions event?",
+    "answer": "Runs your workflow when a release is published, unpublished, created, edited, deleted, or prereleased.",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#release",
+    "tag": "github actions"
+  },
+  {
+    "question": "release event activity types?",
+    "answer": "The 'release' event is triggered by activities like published, unpublished, created, edited, deleted, and prereleased.",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#release",
+    "tag": "github actions"
+  },
+  {
+    "question": "repository_dispatch GitHub Actions event?",
+    "answer": "Runs your workflow when a client sends a repository dispatch event to a GitHub API endpoint.",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#repository_dispatch",
+    "tag": "github actions"
+  },
+  {
+    "question": "schedule GitHub Actions event?",
+    "answer": "Runs your workflow at a scheduled time.",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#schedule",
+    "tag": "github actions"
+  },
+  {
+    "question": "status GitHub Actions event?",
+    "answer": "Runs your workflow when the status of a Git commit changes.",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#status",
+    "tag": "github actions"
+  },
+  {
+    "question": "watch GitHub Actions event?",
+    "answer": "Runs your workflow when someone stars the repository.",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#watch",
+    "tag": "github actions"
+  },
+  {
+    "question": "workflow_call GitHub Actions event?",
+    "answer": "Runs your workflow when another workflow calls the workflow.",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#workflow_call",
+    "tag": "github actions"
+  },
+  {
+    "question": "workflow_dispatch GitHub Actions event?",
+    "answer": "Runs your workflow when manually triggered by the UI or API.",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#workflow_dispatch",
+    "tag": "github actions"
+  },
+  {
+    "question": "workflow_run GitHub Actions event?",
+    "answer": "Runs your workflow when a workflow run is requested or completed.",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#workflow_run",
+    "tag": "github actions"
+  },
+  {
+    "question": "workflow_run event activity types?",
+    "answer": "The 'workflow_run' event is triggered by activities like requested and completed.",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#workflow_run",
+    "tag": "github actions"
+  },
+
+  {
+    "question": "branch_protection_rule event in GitHub Actions?",
+    "answer": "Runs your workflow when branch protection rules in the workflow repository are changed. For example, you can run a workflow when a branch protection rule has been created or deleted.",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows",
+    "tag": "github actions"
+  },
+  {
+    "question": "What is the 'check_run' event in GitHub Actions?",
+    "answer": "Runs your workflow when activity related to a check run occurs. For example, you can run a workflow when a check run has been rerequested or completed.",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows",
+    "tag": "github actions"
+  },
+  {
+    "question": "check_suite event in GitHub Actions?",
+    "answer": "Runs your workflow when check suite activity occurs. For example, you can run a workflow when a check suite has been completed.",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows",
+    "tag": "github actions"
+  },
+  {
+    "question": "create event in GitHub Actions?",
+    "answer": "Runs your workflow when someone creates a Git reference (Git branch or tag) in the workflow's repository. For example, you can run a workflow when the create event occurs.",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows",
+    "tag": "github actions"
+  },
+  {
+    "question": "delete event in GitHub Actions?",
+    "answer": "Runs your workflow when someone deletes a Git reference (Git branch or tag) in the workflow's repository. For example, you can run a workflow when the delete event occurs.",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows",
+    "tag": "github actions"
+  },
+  {
+    "question": "deployment event in GitHub Actions?",
+    "answer": "Runs your workflow when someone creates a deployment in the workflow's repository. For example, you can run a workflow when the deployment event occurs.",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows",
+    "tag": "github actions"
+  },
+  {
+    "question": "deployment_status event in GitHub Actions?",
+    "answer": "Runs your workflow when a third party provides a deployment status. For example, you can run a workflow when the deployment_status event occurs.",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows",
+    "tag": "github actions"
+  },
+  {
+    "question": "fork event in GitHub Actions?",
+    "answer": "Runs your workflow when someone forks a repository. For example, you can run a workflow when the fork event occurs.",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows",
+    "tag": "github actions"
+  },
+  {
+    "question": "gollum event in GitHub Actions?",
+    "answer": "Runs your workflow when a Wiki page is created or updated. For example, you can run a workflow when the gollum event occurs.",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows",
+    "tag": "github actions"
+  },
+  {
+    "question": "issue_comment event in GitHub Actions?",
+    "answer": "Runs your workflow when an issue comment is created, edited, or deleted. For example, you can run a workflow when the issue_comment event occurs.",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows",
+    "tag": "github actions"
+  },
+  {
+    "question": "issues event in GitHub Actions?",
+    "answer": "Runs your workflow when an issue is opened, edited, deleted, transferred, pinned, unpinned, closed, reopened, assigned, unassigned, labeled, unlabeled, locked, unlocked, or milestoned.",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows",
+    "tag": "github actions"
+  },
+  {
+    "question": "label event in GitHub Actions?",
+    "answer": "Runs your workflow when a label is created, edited, or deleted. For example, you can run a workflow when the label event occurs.",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows",
+    "tag": "github actions"
+  },
+  {
+    "question": "member event in GitHub Actions?",
+    "answer": "Runs your workflow when a user is added or removed as a collaborator to a repository, or has their permissions changed.",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows",
+    "tag": "github actions"
+  },
+  {
+    "question": "milestone event in GitHub Actions?",
+    "answer": "Runs your workflow when a milestone is created, closed, opened, edited, or deleted. For example, you can run a workflow when the milestone event occurs.",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows",
+    "tag": "github actions"
+  },
+  {
+    "question": "page_build event in GitHub Actions?",
+    "answer": "Runs your workflow when a Pages site is built or results in a failed build.",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows",
+    "tag": "github actions"
+  },
+  {
+    "question": "What is the 'project' event in GitHub Actions?",
+    "answer": "Runs your workflow when a project is created, updated, closed, reopened, or deleted.",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows",
+    "tag": "github actions"
+  },
+  {
+    "question": "project_card event in GitHub Actions?",
+    "answer": "Runs your workflow when a project card is created, moved, converted to an issue, edited, or deleted.",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows",
+    "tag": "github actions"
+  },
+  {
+    "question": "project_column event in GitHub Actions?",
+    "answer": "Runs your workflow when a project column is created, updated, moved, or deleted.",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows",
+    "tag": "github actions"
+  },
+  {
+    "question": "public event in GitHub Actions?",
+    "answer": "Runs your workflow when a private repository is made public.",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows",
+    "tag": "github actions"
+  },
+  {
+    "question": "pull_request event in GitHub Actions?",
+    "answer": "Runs your workflow when a pull request is opened, edited, closed, reopened, synchronized, assigned, unassigned, labeled, unlabeled, locked, unlocked, review requested, review request removed, ready for review, converted to draft.",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows",
+    "tag": "github actions"
+  },
+  {
+    "question": "pull_request_review event in GitHub Actions?",
+    "answer": "Runs your workflow when a review is submitted, edited, or dismissed on a pull request.",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows",
+    "tag": "github actions"
+  },
+  {
+    "question": "pull_request_review_comment event in GitHub Actions?",
+    "answer": "Runs your workflow when a comment on a pull request's unified diff is created, edited, or deleted.",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows",
+    "tag": "github actions"
+  },
+  {
+    "question": "push event in GitHub Actions?",
+    "answer": "Runs your workflow when a commit is pushed to a branch or tag.",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows",
+    "tag": "github actions"
+  },
+  {
+    "question": "release event in GitHub Actions?",
+    "answer": "Runs your workflow when a release is published, unpublished, created, edited, deleted, prereleased, or released.",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows",
+    "tag": "github actions"
+  },
+  {
+    "question": "repository_dispatch event in GitHub Actions?",
+    "answer": "Runs your workflow when an external system calls the repository dispatch event API.",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows",
+    "tag": "github actions"
+  },
+  {
+    "question": "schedule event in GitHub Actions?",
+    "answer": "Runs your workflow at specific times using cron syntax.",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows",
+    "tag": "github actions"
+  },
+  {
+    "question": "status event in GitHub Actions?",
+    "answer": "Runs your workflow when the status of a Git commit changes.",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows",
+    "tag": "github actions"
+  },
+  {
+    "question": "watch event in GitHub Actions?",
+    "answer": "Runs your workflow when someone stars the repository.",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows",
+    "tag": "github actions"
+  },
+  {
+    "question": "workflow_dispatch event in GitHub Actions?",
+    "answer": "Runs your workflow when an external system or user triggers the workflow manually.",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows",
+    "tag": "github actions"
+  },
+  {
+    "question": "workflow_run event in GitHub Actions?",
+    "answer": "Runs your workflow when a workflow run is requested or completed.",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows",
+    "tag": "github actions"
+  },
+  {
+    "question": "registry_package event in GitHub Actions?",
+    "answer": "Runs your workflow when a package is published or updated in the GitHub Packages registry.",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows",
+    "tag": "github actions"
+  },
+  {
+    "question": "discussion event in GitHub Actions?",
+    "answer": "Runs your workflow when a discussion is created, edited, pinned, unpinned, locked, unlocked, transferred, answered, unanswered, labeled, unlabeled, or deleted.",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows",
+    "tag": "github actions"
+  },
+  {
+    "question": "discussion_comment event in GitHub Actions?",
+    "answer": "Runs your workflow when a comment on a discussion is created, edited, or deleted.",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows",
+    "tag": "github actions"
+  },
+  {
+    "question": "pull_request_target event in GitHub Actions?",
+    "answer": "Runs your workflow on the target branch of the pull request when a pull request is opened, synchronized, or reopened.",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows",
+    "tag": "github actions"
+  },
+  {
+    "question": "page_build event in GitHub Actions?",
+    "answer": "Runs your workflow when a Pages site is built or results in a failed build.",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows",
+    "tag": "github actions"
+  },
+  {
+    "question": "workflow_call event in GitHub Actions?",
+    "answer": "Runs your workflow when it's called by another workflow.",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows",
+    "tag": "github actions"
+  },
+  {
+    "question": "workflow_job event in GitHub Actions?",
+    "answer": "Runs your workflow when a job is added to a workflow run.",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows",
+    "tag": "github actions"
+  },
+  {
+    "question": "repository_vulnerability_alert event in GitHub Actions?",
+    "answer": "Runs your workflow when a security vulnerability is added, removed, or updated in the repository.",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows",
+    "tag": "github actions"
+  },
+  {
+    "question": "star event in GitHub Actions?",
+    "answer": "Runs your workflow when someone stars the repository.",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows",
+    "tag": "github actions"
+  },
+  {
+    "question": "security_advisory event in GitHub Actions?",
+    "answer": "Runs your workflow when a security advisory is published, updated, or withdrawn.",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows",
+    "tag": "github actions"
+  },
+  {
+    "question": "secret_scanning_alert event in GitHub Actions?",
+    "answer": "Runs your workflow when a secret scanning alert is created, resolved, or reopened.",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows",
+    "tag": "github actions"
+  },
+  {
+    "question": "workflow_dispatch event in GitHub Actions?",
+    "answer": "Runs your workflow when an external system or user triggers the workflow manually.",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows",
+    "tag": "github actions"
+  },
+  {
+    "question": "repository_import event in GitHub Actions?",
+    "answer": "Runs your workflow when a repository import completes.",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows",
+    "tag": "github actions"
+  },
+  {
+    "question": "repository_vulnerability_alert event in GitHub Actions?",
+    "answer": "Runs your workflow when a security vulnerability alert is created, dismissed, or resolved.",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows",
+    "tag": "github actions"
+  },
+  {
+    "question": "team event in GitHub Actions?",
+    "answer": "Runs your workflow when a team is added, modified, or deleted.",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows",
+    "tag": "github actions"
+  },
+  {
+    "question": "team_add event in GitHub Actions?",
+    "answer": "Runs your workflow when a team is added to a repository.",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows",
+    "tag": "github actions"
+  },
+  {
+    "question": "commit_comment event in GitHub Actions?",
+    "answer": "Runs your workflow when a commit comment is created.",
+    "url": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows",
+    "tag": "github actions"
+  }
+]
