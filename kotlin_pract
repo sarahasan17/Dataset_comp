@@ -1,0 +1,25 @@
+package com.example
+
+import com.intellij.openapi.project.DumbAware
+import com.intellij.openapi.project.Project
+import com.intellij.openapi.wm.ToolWindow
+import com.intellij.openapi.wm.ToolWindowFactory
+import com.intellij.ui.content.ContentFactory
+import javax.swing.JPanel
+import javax.swing.JLabel
+import java.awt.BorderLayout
+
+class MyToolWindowFactory : ToolWindowFactory, DumbAware {
+    override fun createToolWindowContent(project: Project, toolWindow: ToolWindow) {
+        // Create a JPanel to be used as the tool window content
+        val panel = JPanel(BorderLayout())
+        panel.add(JLabel("Side Screen Content"), BorderLayout.CENTER)
+
+        // Wrap the panel in a Content object
+        val contentFactory = ContentFactory.SERVICE.getInstance()
+        val content = contentFactory.createContent(panel, "", false)
+
+        // Add the content to the tool window
+        toolWindow.contentManager.addContent(content)
+    }
+}
