@@ -1,25 +1,81 @@
-package com.example
+To create a panel with a rounded border in a Java Swing application, you can use a custom border by extending the `AbstractBorder` class and overriding its `paintBorder` method. Here's a step-by-step example of how to achieve this:
 
-import com.intellij.openapi.project.DumbAware
-import com.intellij.openapi.project.Project
-import com.intellij.openapi.wm.ToolWindow
-import com.intellij.openapi.wm.ToolWindowFactory
-import com.intellij.ui.content.ContentFactory
-import javax.swing.JPanel
-import javax.swing.JLabel
-import java.awt.BorderLayout
+1. Create a custom border class that extends `AbstractBorder`.
+2. Override the `paintBorder` method to draw a rounded rectangle.
+3. Apply the custom border to a `JPanel`.
 
-class MyToolWindowFactory : ToolWindowFactory, DumbAware {
-    override fun createToolWindowContent(project: Project, toolWindow: ToolWindow) {
-        // Create a JPanel to be used as the tool window content
-        val panel = JPanel(BorderLayout())
-        panel.add(JLabel("Side Screen Content"), BorderLayout.CENTER)
+Here is the complete code:
 
-        // Wrap the panel in a Content object
-        val contentFactory = ContentFactory.SERVICE.getInstance()
-        val content = contentFactory.createContent(panel, "", false)
+```java
+import javax.swing.*;
+import javax.swing.border.AbstractBorder;
+import java.awt.*;
 
-        // Add the content to the tool window
-        toolWindow.contentManager.addContent(content)
+public class RoundedBorderExample {
+    public static void main(String[] args) {
+        // Create a new JFrame
+        JFrame frame = new JFrame("Rounded Border Example");
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setSize(400, 200);
+
+        // Create a JPanel and set a layout manager
+        JPanel panel = new JPanel();
+        panel.setLayout(new BorderLayout());
+        
+        // Apply the custom rounded border to the panel
+        panel.setBorder(new RoundedBorder(15)); // 15 is the radius of the rounded corners
+        
+        // Add some content to the panel
+        JLabel label = new JLabel("This panel has a rounded border!", SwingConstants.CENTER);
+        panel.add(label, BorderLayout.CENTER);
+
+        // Add the panel to the frame
+        frame.add(panel);
+        
+        // Set the frame's visibility
+        frame.setVisible(true);
     }
 }
+
+// Custom border class to create a rounded border
+class RoundedBorder extends AbstractBorder {
+    private final int radius;
+
+    RoundedBorder(int radius) {
+        this.radius = radius;
+    }
+
+    @Override
+    public void paintBorder(Component c, Graphics g, int x, int y, int width, int height) {
+        Graphics2D g2d = (Graphics2D) g;
+        g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+        g2d.setColor(Color.BLACK);
+        g2d.drawRoundRect(x, y, width - 1, height - 1, radius, radius);
+    }
+
+    @Override
+    public Insets getBorderInsets(Component c) {
+        return new Insets(radius + 1, radius + 1, radius + 1, radius + 1);
+    }
+
+    @Override
+    public Insets getBorderInsets(Component c, Insets insets) {
+        insets.left = insets.top = insets.right = insets.bottom = radius + 1;
+        return insets;
+    }
+}
+```
+
+### Explanation
+
+1. **Custom Rounded Border Class**:
+    - The `RoundedBorder` class extends `AbstractBorder`.
+    - The constructor takes the radius of the rounded corners as a parameter.
+    - The `paintBorder` method is overridden to draw a rounded rectangle using `Graphics2D`'s `drawRoundRect` method.
+    - The `getBorderInsets` methods are overridden to provide the correct insets for the border.
+
+2. **Using the Custom Border**:
+    - A `JPanel` is created and a `RoundedBorder` is set as its border.
+    - The panel is added to the frame, and some content is added to the panel to demonstrate the border.
+
+This approach allows you to create a panel with a rounded border, which enhances the visual appearance of your Java Swing application.
