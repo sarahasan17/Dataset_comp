@@ -1,0 +1,34 @@
+private void addMessage(String message, boolean isUser) {
+        // Create a formatted label with user or bot prefix
+        String prefix = isUser ? "Me:" : "Bot:";
+        JLabel messageLabel = new JLabel("<html><b>" + prefix + "</b><br>" + message + "</html>");
+        messageLabel.setFont(new Font("Arial", Font.PLAIN, 14));
+        messageLabel.setOpaque(true);
+
+        if (isUser) {
+            messageLabel.setBackground(new Color(21, 117, 169));
+            messageLabel.setForeground(Color.WHITE);
+        } else {
+            messageLabel.setBackground(new Color(255, 255, 255));
+            messageLabel.setForeground(Color.BLACK);
+        }
+
+        // Align the message to the left for user and right for bot
+        messageLabel.setAlignmentX(isUser ? Component.LEFT_ALIGNMENT : Component.RIGHT_ALIGNMENT);
+
+        // Set the custom rounded border with padding
+        LineBorder line = new LineBorder(Color.white, 5, true); // color, thickness, rounded
+        messageLabel.setBorder(line);
+
+        // Set the preferred width size to allow wrapping text
+        messageLabel.setPreferredSize(new Dimension(chatPanel.getWidth(), 5000));
+
+        // Add the message label to the chat panel
+        chatPanel.add(messageLabel,BorderLayout.CENTER);
+        chatPanel.revalidate();
+        chatPanel.repaint();
+
+        // Scroll to the bottom of the chat panel
+        JScrollBar verticalScrollBar = ((JScrollPane) chatPanel.getParent().getParent()).getVerticalScrollBar();
+        verticalScrollBar.setValue(verticalScrollBar.getMaximum());
+    }
