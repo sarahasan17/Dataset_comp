@@ -1,0 +1,6 @@
+sendButton = new JButton("Send") {
+            @Override
+            public void updateUI() {
+                setUI(new javax.swing.plaf.basic.BasicButtonUI());
+            }
+        };
