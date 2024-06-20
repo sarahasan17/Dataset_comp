@@ -1,61 +1,25 @@
-import com.intellij.openapi.components.ServiceManager;
-import com.intellij.openapi.project.Project;
-import com.intellij.openapi.wm.ToolWindow;
-import com.intellij.openapi.wm.ToolWindowFactory;
-import com.intellij.ui.content.Content;
-import com.intellij.ui.content.ContentFactory;
+private String wrapText(String text) {
+        int maxWidth = chatPanel.getWidth(); // Get current width of chatPanel
+        FontMetrics fm = chatPanel.getFontMetrics(new Font("Arial", Font.PLAIN, 14));
+        StringBuilder wrappedText = new StringBuilder("<html>");
+        String[] words = text.split(" ");
+        int lineWidth = 0;
+        boolean firstWord = true;
 
-import javax.swing.*;
-import java.awt.*;
+        for (String word : words) {
+            int wordWidth = fm.stringWidth(word);
+            if (!firstWord && lineWidth + fm.stringWidth(" " + word) > maxWidth) {
+                wrappedText.append("<br>");
+                lineWidth = 0;
+            }
+            if (!firstWord) {
+                wrappedText.append(" ");
+                lineWidth += fm.stringWidth(" ");
+            }
+            wrappedText.append(word);
+            lineWidth += wordWidth;
+            firstWord = false;
+        }
 
-public class MyToolWindowFactory implements ToolWindowFactory {
-
-    @Override
-    public void createToolWindowContent(Project project, ToolWindow toolWindow) {
-        MyToolWindow myToolWindow = new MyToolWindow();
-        ContentFactory contentFactory = ContentFactory.SERVICE.getInstance();
-        Content content = contentFactory.createContent(myToolWindow.getContent(), "", false);
-        toolWindow.getContentManager().addContent(content);
+        return wrappedText.toString();
     }
-}
-
-class MyToolWindow {
-    private JPanel myToolWindowContent;
-    private JPanel chatPanel;
-    private JTextField inputField;
-    private JButton sendButton;
-
-    public MyToolWindow() {
-        myToolWindowContent = new JPanel(new BorderLayout());
-        chatPanel = new JPanel();
-        chatPanel.setLayout(new BoxLayout(chatPanel, BoxLayout.Y_AXIS));
-        JScrollPane chatScrollPane = new JScrollPane(chatPanel);
-        chatScrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
-
-        JPanel bottomPanel = new JPanel(new BorderLayout());
-
-        inputField = new JTextField(20);
-        inputField.setToolTipText("Enter your message here");
-        bottomPanel.add(inputField, BorderLayout.CENTER);
-        sendButton = new JButton("Send");
-        sendButton.setBorder(BorderFactory.createEmptyBorder(10, 20, 10, 20));
-        sendButton.setFont(new Font("Arial", Font.BOLD, 12));
-        sendButton.setBackground(new Color(21, 117, 169));
-        sendButton.setOpaque(true);
-        sendButton.setBorderPainted(false);
-        sendButton.setForeground(Color.WHITE);
-        bottomPanel.add(sendButton, BorderLayout.EAST);
-
-        myToolWindowContent.add(chatScrollPane, BorderLayout.CENTER);
-        myToolWindowContent.add(bottomPanel, BorderLayout.SOUTH);
-
-        // Set preferred, minimum, and maximum sizes
-        myToolWindowContent.setPreferredSize(new Dimension(400, 300));
-        myToolWindowContent.setMinimumSize(new Dimension(300, 200));
-        myToolWindowContent.setMaximumSize(new Dimension(800, 600));
-    }
-
-    public JPanel getContent() {
-        return myToolWindowContent;
-    }
-}
