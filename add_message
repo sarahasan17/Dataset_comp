@@ -1,34 +1,49 @@
-private void addMessage(String message, boolean isUser) {
-        // Create a formatted label with user or bot prefix
-        String prefix = isUser ? "Me:" : "Bot:";
-        JLabel messageLabel = new JLabel("<html><b>" + prefix + "</b><br>" + message + "</html>");
-        messageLabel.setFont(new Font("Arial", Font.PLAIN, 14));
-        messageLabel.setOpaque(true);
+INTRODUCING THE TEAM
+(Guys send your pic via your personal mail to wellsfargo mail id)
+INTRODUCING THE PROBLEM STATEMENT
+Build an EPL-X Chatbot extension which will answer the developer queries by finding relevant answers from Confluence.
+The chatbot also shows related searches and their URLs from the confluence website.
+EXPLANATION: The project thrives on developing a Plugin for 2 popular IDEs: Visual Studio Code and Intellij IDEA. The plugin enhances the functionality of these IDEs by providing seamless integration with the WellsFargo Confluence page, thereby helping the developers by providing answers to their queries without the need of context switching. 
+Furthermore, the chatbot provides the top 4 relevant searches as well their URLs to guide the developers in case the chatbot is unable to answer their query.
+TECHNOLOGY TRACK:
+VS CODE EXTENSION:
+Frontend: Javascript, Typescript
+Backend: Flask(Python)
+INTELLIJ PLUGIN
+Frontend: Java AWT
+Backend:Flask(Python)
+ASSUMPTIONS:
+The user is a Wells Fargo employee and has access to the Wells Fargo confluence page.
+Authorization is based on the user's secret key from their Confluence page.
+EXPLANATION: To access the chatbot, the user must have access to the Wells Fargo Confluence page. To implement user authorization, we have used the concept of secret storage for both our VS Code extension and IntelliJ plugin. 
+When the user installs the extension for the first time, they are expected to verify their Confluence secret key. Based on the validity of the secret key, the user is granted access to the extension.
+PROPOSED SOLUTION(not sure)
+Developing an extension that provides solutions to developers' problems, thereby saving their time by eliminating the need for context switching and searching through various Confluence pages.
 
-        if (isUser) {
-            messageLabel.setBackground(new Color(21, 117, 169));
-            messageLabel.setForeground(Color.WHITE);
-        } else {
-            messageLabel.setBackground(new Color(255, 255, 255));
-            messageLabel.setForeground(Color.BLACK);
-        }
+DEMONSTRATION:
+(Screenshare the plugin/extension part)
 
-        // Align the message to the left for user and right for bot
-        messageLabel.setAlignmentX(isUser ? Component.LEFT_ALIGNMENT : Component.RIGHT_ALIGNMENT);
+KEY FEATURES:
+Eliminates the need for context switching, thereby saving users' time
+Seamless integration of Confluence data with the extension.
+User Experience: Deliver a user-friendly interface that simplifies querying by providing appropriate solutions and relevant URLs from the Confluence page. The extension also incorporates features such as input/output, interactive buttons, and rich formatting for displaying responses.
+Performance: Optimise plugin performance for a superior user experience by enhancing responsiveness.
+Query Answers: Train the model on various questions from the Confluence troubleshooting document to help the bot efficiently answer user queries.
+Natural Language Processing: Use NLP for data preprocessing by applying techniques like lemmatization, stemming, tokenization, and vectorization to enhance the model's performance.
 
-        // Set the custom rounded border with padding
-        LineBorder line = new LineBorder(Color.white, 5, true); // color, thickness, rounded
-        messageLabel.setBorder(line);
+FUTURE WORK:
+Utilise more advanced machine learning models, such as LLMs and Transformers, to enhance the chatbot's performance. 
+Train the current model on a larger dataset to enable it to answer a wide range of queries across various domains.
 
-        // Set the preferred width size to allow wrapping text
-        messageLabel.setPreferredSize(new Dimension(chatPanel.getWidth(), 5000));
+THE JOURNEY AND CHALLENGES:
+Finding the most relevant vectorization technique for the machine learning model was a big challenge.
+Faced multiple problems with the various layouts provided by Java AWT to make the UI of the plugin interactive and user friendly.
 
-        // Add the message label to the chat panel
-        chatPanel.add(messageLabel,BorderLayout.CENTER);
-        chatPanel.revalidate();
-        chatPanel.repaint();
+IMPACT:
 
-        // Scroll to the bottom of the chat panel
-        JScrollBar verticalScrollBar = ((JScrollPane) chatPanel.getParent().getParent()).getVerticalScrollBar();
-        verticalScrollBar.setValue(verticalScrollBar.getMaximum());
-    }
+LEARNINGS:
+Teamwork and Collaboration: Learned how to work effectively as a team, enhancing communication skills, and contributing to group efforts to achieve common goals.
+Problem-Solving Skills: Developing the ability to identify problem statmement, think and devise solutions to overcome challenges encountered during projects.
+Technical Skills: Learning various technology stacks and their applications during the course of the project
+Time Management: Learning how to efficiently manage our time by planning, organising, and prioritising tasks to meet project deadlines and improve productivity.
+
